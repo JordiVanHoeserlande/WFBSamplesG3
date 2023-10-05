@@ -1,0 +1,109 @@
+:root{
+    --darkest-color: #900C3F;
+    --dark-orange: #FF5733;
+    --background-main: #FFC300;
+    --background-div: #DAF7A6;
+}
+
+/*Element styles.*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--dark-orange);
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--darkest-color);
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--dark-orange);
+}
+
+div{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px dotted var(--dark-orange);
+
+    /*Centreren.*/
+    margin: 0 auto;
+    background-color: var(--background-div);
+
+}
+
+/*Basis CSS classes en id.*/
+
+#header{
+    background-color: var(--background-div);
+}
+
+/*ontext element. (id of class)*/
+
+/*
+p.block{
+    background-color: red;
+}
+*/
+
+div.block{
+    background-color: var(--dark-orange);
+}
+
+p.block, div.block{
+    background-color: green;
+}
+
+.middle-align{
+    vertical-align: middle;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+    
+}
+
+.clear-fix{
+    overflow: auto;
+}
+
+/*Comment class background fill.*/
+
+body.background-fill{
+    background-image: url("../images/superheroIncLogo.png");
+    background-repeat: repeat-y;
+    background-position: 95%;
+    background-attachment: fixed;
+    margin-top: 10px;
+}
+
+div.background-fill{
+    background-image: url("../images/superheroIncLogo.png");
+    background-size: contain;
+    opacity: 0.25;
+}
+
+.clear-right{
+    clear: right;
+}
+
+ul.icon-list{
+    /*Source image*/
+    list-style-image: url("../images/listIcon.png");
+    /*Position*/
+    list-style-position: outside;
+}
