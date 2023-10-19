@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/stylesheet.css"/>
+    <link rel="stylesheet" href="../style/navstyle.css"/>
+    <link rel="stylesheet" href="../style/tablestyle.css"/>
     <title>Tables</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul class="test">
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="hyperlinks.html">Hyperlinks</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="specificity.html">Specificity</a></li>µ
+                <li><a href="forms.html">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1></h1>
+        <strong></strong>
+    </div>
+    <div>
+        <h2>Een eenvoudige tabel</h2>
+        <table class="simple-table">
+            <caption>First table example</caption>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data R1C1</td>
+                <td>Data R1C2</td>
+            </tr>
+            <tr>
+                <td>Data R2C1</td>
+                <td class="highlight">Data R2C2</td>
+            </tr>
+            <tr>
+                <td>Data R3C1</td>
+                <td>Data R3C2</td>
+            </tr>
+        </table>
+
+        <h2>Een eenvoudige tabel met rowspan en colspan</h2>
+        <table class="simple-table">
+            <caption>Second table example</caption>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Data R1C1</td>
+                <td>Data R1C2</td>
+                <td rowspan="3" class="highlight">Attention!</td>
+            </tr>
+            <tr>
+                <td>Data R2C1</td>
+                <td>Data R2C2</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="highlight">Disclaimer!</td>
+            </tr>
+        </table>
+        <h2>Een eenvoudige tabel met onderverdeling</h2>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data R1C1</td>
+                <td>Data R1C2</td>
+            </tr>
+            <tr>
+                <td>Data R1C1</td>
+                <td>Data R1C2</td>
+            </tr>
+            <tr>
+                <td>Data R2C1</td>
+                <td>Data R2C2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Data R3C1</td>
+                <td>Data R3C2</td>
+            </tr>
+        </tfoot>
+
+        <table class="simple-table">
+            <caption>Third table example</caption>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data R1C1</td>
+                <td>Data R1C2</td>
+            </tr>
+            <tr>
+                <td>Data R2C1</td>
+                <td>Data R2C2</td>
+            </tr>
+            <tr>
+                <td>Data R3C1</td>
+                <td>Data R3C2</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

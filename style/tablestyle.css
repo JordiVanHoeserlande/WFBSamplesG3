@@ -1,0 +1,26 @@
+table.simple-table {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid black;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    border: 1px dotted darkcyan;
+    text-align: center;
+}
+
+th {
+    background-color: darkcyan;
+    color: white;
+}
+
+td.highlight {
+    background-color: red;
+    color: white;
+}
+
+tfoot {
+    background-color: aqua;
+}

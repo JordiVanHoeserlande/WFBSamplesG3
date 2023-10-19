@@ -1,0 +1,23 @@
+/*0.0.1*/
+p {
+    color: orange !important;
+}
+/*0.1.0*/
+.marker {
+    color: greenyellow;
+}
+/*1.0.0*/
+#attention {
+    color: lightblue;
+    background-color: beige;
+}
+/*1.0.1*/
+p#attention {
+    color: white;
+}
+/*Te Vermijden Important = !important*/
+
+/*Overrule class .active from navstyle*/
+.active {
+    background-color: greenyellow;
+}

@@ -1,0 +1,40 @@
+header nav ul{
+    /*Bullet weg*/
+    list-style-type: none;
+    /*Centreren*/
+    text-align: center;
+    background-color: var(--background-div);
+
+}
+
+header nav ul li{
+    /*Items naast elkaar*/
+    display: inline-block;
+    background-color: var(--darkest-color);
+    width: 15%;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    height: 40px;
+    line-height: 40px;
+}
+
+header nav a{
+    display: block;
+    text-decoration: none;
+    color: var(--background-main);
+}
+
+header nav a:visited{
+    color: green;
+}
+
+header nav a:hover{
+    text-decoration: wavy;
+    color: purple;
+    font-size: 2.4em;
+}
+
+.active{
+    background-color: var(--background-main);
+    color: aquamarine;
+}

@@ -1,0 +1,33 @@
+article {
+    width: 60%;
+    background-color: white;
+    color: black;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 25px;
+    overflow: auto;
+}
+
+/*Laaste article van main krijgt andere achtergrondkleur.*/
+
+main article:last-child() {
+    background-color: blueviolet;
+}
+
+/*Paragraaf vlak na h2 in een article schuin gedrukt.*/
+
+article h2 + p {
+    font-style: italic;
+}
+
+/*All elementen met een attribuut alt dat het woord logo bevat voorzie je van een border dotted 3 px black.*/
+
+article img[alt~="logo"] {
+    border: 3px dotted black;
+}
+
+/*Even artikels uit main verbergen.*/
+
+main article:nth-child(even) {
+    display: none;
+}

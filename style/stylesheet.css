@@ -101,9 +101,13 @@ div.background-fill{
     clear: right;
 }
 
-ul.icon-list{
+.icon-list{
     /*Source image*/
     list-style-image: url("../images/listIcon.png");
     /*Position*/
     list-style-position: outside;
+}
+ul.test{
+    list-style-image: url("../images/listIcon.png");
+    list-style-position: inside;
 }
