@@ -1,0 +1,44 @@
+main {
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: aqua;
+    height: 100%;
+    width: 250px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border: 2px solid darkblue;
+}
+
+article>img {
+    height: 50%;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+#article-e {
+    align-self: flex-end;
+}
+
+main>article:last-child {
+    background-color: orange;
+}
+
+@media screen and (max-width: 60em) {
+    
+}

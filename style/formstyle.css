@@ -1,0 +1,51 @@
+form {
+    overflow: auto;
+}
+
+div {
+    border: none;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+input {
+    background-color: lightpink;
+}
+
+input[type="password"] {
+    background-color: red;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: red;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: white;
+}
+
+input[required]::after {
+    content: " Vereist";
+    font-style: italic;
+    font-size: 2px;
+}
+
+label + input[for="clause"] {
+    width: 90%;
+}
+
+form > div:last-child {
+    width: 15%;
+    float: right;
+    margin-right: 10px;
+}

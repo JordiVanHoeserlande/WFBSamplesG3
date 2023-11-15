@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/stylesheet.css"/>
-    <link rel="stylesheet" href="../style/specificity.css"/>
-    <link rel="stylesheet" href="../style/navstyle.css"/>
-    <link rel="stylesheet" href="../style/depthstyle.css"/>
-    <link rel="stylesheet" href="../style/formstyle.css"/>
+    <link rel="stylesheet" href="../style/stylesheet.css" />
+    <link rel="stylesheet" href="../style/specificity.css" />
+    <link rel="stylesheet" href="../style/navstyle.css" />
+    <link rel="stylesheet" href="../style/depthstyle.css" />
+    <link rel="stylesheet" href="../style/formstyle.css" />
     <title>specificity en Priority</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -28,13 +30,94 @@
     <main>
         <h1>Voorbeeld Webformulieren</h1>
         <div>
-            <form>
-                
+            <form name="reg-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" autocomplete="on">
+                <fieldset title="Personal Information">
+                    <legend>
+                        PersoonsInformatie
+                    </legend>
+                    <div>
+                        <label for="input-first-name">Voornaam:</label>
+                        <input type="text" name="first-name" id="input-first-name" placeholder="Geef voornaam in..."
+                            maxlength="40" required tabindex="1">
+                        <br /><br />
+                        <label for="input-last-name">Achternaam:</label>
+                        <input type="text" name="last-name" id="input-last-name" placeholder="Geef achternaam in..."
+                            maxlength="60" required tabindex="2">
+                        <br /><br />
+                        <label for="input-email">E-mail:</label>
+                        <input type="email" name="email" id="input-email" placeholder="Geef mail in..." maxlength="40"
+                            required tabindex="3">
+                        <br /><br />
+                        <label for="input-re-email">Herhaal E-mail:</label>
+                        <input type="text" name="re-email" id="input-re-email"
+                            placeholder="Geef je a-mail nogmaals in..." maxlength="40" required tabindex="4">
+                    </div>
+                    <div>
+                        <label for="input-color">Kleur:</label>
+                        <input type="color" name="color" id="input-color" tabindex="5">
+
+                    </div>
+                    <div>
+                        <label for="input-password">Paswoord:</label>
+                        <input type="password" name="password" id="input-password" placeholder="Geef paswoord in..."
+                            required tabindex="6">
+
+                    </div>
+                </fieldset>
+                <fieldset title="Preferences">
+                    <legend>Programmeer Voorkeuren</legend>
+                    <div>
+                        <label for="list-programs">Welke taal verkies je?</label>
+                        <input type="text" name="program-preference" id="list-programs" list="program-list" required
+                            tabindex="7">
+                        <datalist id="program-list">
+                            <option value="C#">
+                            <option value="JS">
+                            <option value="Python">
+                            <option value="Swift">
+                        </datalist>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="main-clause" id="clause" tabindex="8">
+                        <label for="clause">Ik aanvaard de algemene voorwaarden van HOWEST.</label>
+                    </div>
+                </fieldset>
+                <fieldset title="Voorkeuren">
+                    <legend>Technologie</legend>
+                    <div>
+                        <label for="future-tech">Toekomstige tech?</label>
+                        <select name="future-tech-choice" id="clause" tabindex="9">
+                            <optgroup label="Web">
+                                <option value="React">React</option>
+                                <option value="Vue">Vue</option>
+                                <option value="Bootstrap">Bootstrap</option>
+                            </optgroup>
+
+                            <optgroup label="Architecture">
+                                <option value="Soap">Soap</option>
+                                <option value="RestAPI">RestAPI</option>
+                                <option value="Clean">Clean</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset title="Traject">
+                    <legend>Type Traject</legend>
+                    <div>
+                        <p>Welke type traject volg je?</p>
+                        <input type="checkbox" name="Dag" value="ok" checked>Dag<br />
+                        <input type="checkbox" name="Avond" value="ok">Avond<br />
+                        <input type="checkbox" name="@Home" value="ok" disabled>@Home<br />
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Send" id="btn-send">
+                    <input type="reset" value="Reset" id="btn-reset">
+
+                </div>
             </form>
         </div>
     </main>
-    <div>
-        <p class="marker" id="attention" style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, soluta tempora praesentium culpa sapiente provident atque, hic, tempore nobis repudiandae rem libero a deleniti eligendi magnam exercitationem sequi voluptate vel!</p>
-    </div>
 </body>
+
 </html>

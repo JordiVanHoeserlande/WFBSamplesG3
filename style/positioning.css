@@ -1,0 +1,133 @@
+#child-relative {
+    height: 150px;
+    width: 150px;
+    background-color: lime;
+    position: relative;
+    top: 350px;
+    right: 100px;
+}
+
+#child-absolute {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#parent {
+    position: relative;
+}
+
+#child-petit {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+article {
+    background-color: lime;
+    position: sticky;
+    top: 150px;
+}
+
+#div-z-samples {
+    position: relative;
+    height: 100px;
+
+}
+
+#div-z-samples>div {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#div-z-1 {
+    background-color: white;
+    z-index: 0;
+}
+
+#div-z-2 {
+    background-image: url(../images/bang.png);
+    background-size: cover;
+    z-index: 0;
+}
+
+#div-z-3 {
+    background-color: black;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}
+
+#center-div {
+    position: relative;
+    height: 400px;
+}
+
+#content-center-div {
+    background-color: wheat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    position: relative;
+    width: 800px;
+    background-color: wheat;
+    height: 200px;
+}
+
+#left-pane {
+    float: left;
+    background-color: blue;
+    width: calc(50% - 200px);
+}
+
+#middle-pane {
+    float: left;
+    width: 400px;
+    background-color: orange;
+    height: 150px;
+}
+
+#right-pane {
+    float: left;
+    height: 150px;
+    background-color: aquamarine;
+    width: calc(50% - 200px);
+}
+
+.fix {
+    padding: 0;
+    border: 0;
+}
+
+#div-overflow {
+    height: 150px;
+    overflow-y: scroll;
+    overflow-y: hidden;
+}
+
+#small-long-box {
+    background-color: yellow;
+    width: 1000px;
+}
